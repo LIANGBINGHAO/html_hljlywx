@@ -10,7 +10,74 @@
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
-    <div class="header"></div>
+    <div class="header">
+      <div class="top">
+        <div class="container">
+          <div class="logo">
+            <a href="">
+              <img src="images/logo.png" />
+            </a>
+          </div>
+          <div class="right">
+            <a class="home" href="" target="_blank">学校首页</a>
+            <div class="search-container">
+              <form method="get" action="" name="searchForm">
+                <input
+                  type="text"
+                  name="query"
+                  class="searchValue"
+                  value="搜索"
+                  onfocus="if(this.value=='搜索'){this.value=''; $(this).css('color','rgba(255,255,255)'); }"
+                  onblur="if(this.value==''){this.value='搜索'; $(this).css('color','rgba(255,255,255,0.4)'); }"
+                  style="color: rgba(255, 255, 255, 0.4);"
+                />
+                <i
+                  class="fa fa-search"
+                  aria-hidden="true"
+                  onclick="javascript:document.searchForm.submit();"
+                ></i>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <ul>
+            <li>
+              <a>首页</a>
+            </li>
+            <li>
+              <a>学校简介</a>
+            </li>
+            <li>
+              <a>学校荣誉</a>
+            </li>
+            <li>
+              <a>大型活动</a>
+            </li>
+            <li>
+              <a>学校成绩</a>
+            </li>
+            <li>
+              <a>就业单位</a>
+            </li>
+            <li>
+              <a>专业介绍</a>
+            </li>
+            <li>
+              <a>优秀毕业生</a>
+            </li>
+            <li>
+              <a>教师风采</a>
+            </li>
+            <li>
+              <a>联系我们</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="footer"></div>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper-3.4.2.jquery.min.js"></script>
