@@ -1,0 +1,260 @@
+.more {
+  width: 130px;
+  height: 42px;
+  border: 1px solid rgba(186, 12, 0, 1);
+  padding: 12px 30px;
+  text-align: center;
+  display: block;
+  margin: 38px auto 50px auto;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(186, 12, 0, 1);
+    line-height: 18px;
+    margin-right: 5px;
+  }
+}
+.dream-palace {
+  height: 706px;
+  background: url(../images/dream-palace-bg.png) no-repeat center;
+  background-size: cover;
+  font-size: 0;
+  .headline {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 24px;
+  }
+  .tab {
+    .tab-title {
+      text-align: center;
+      span {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 81px;
+        cursor: pointer;
+        img {
+          opacity: 0.7;
+        }
+        .word {
+          font-size: 18px;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 25px;
+          margin-top: 11px;
+        }
+      }
+      span:first-child {
+        margin-left: 0;
+      }
+      span.active {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+    .tab-content {
+      text-align: center;
+      margin-top: 24px;
+      display: none;
+      .info {
+        display: inline-block;
+        vertical-align: top;
+        width: 270px;
+        height: 340px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 6px;
+        margin-left: 75px;
+        .img-container {
+          width: 270px;
+          height: 152px;
+          position: relative;
+          overflow: hidden;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 28px;
+          letter-spacing: 1px;
+          margin-top: 10px;
+          margin-bottom: 13px;
+          padding: 0 10px;
+          text-align: center;
+        }
+        .abstract {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 24px;
+          letter-spacing: 1px;
+          padding: 0 14px;
+          text-align: left;
+        }
+      }
+      .info:first-child {
+        margin-left: 0;
+      }
+    }
+    .tab-content.active {
+      display: block;
+    }
+  }
+}
+.good-honours {
+  font-size: 0;
+  .headline {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .tab {
+    .tab-title {
+      text-align: center;
+      span {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(186, 12, 0, 1);
+        line-height: 26px;
+        letter-spacing: 2px;
+        margin-left: 35px;
+        position: relative;
+        cursor: pointer;
+      }
+      span::after {
+        content: "";
+        width: 12px;
+        height: 6px;
+        background: url(../images/arrow-top.png) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: none;
+      }
+      span:first-child {
+        margin-left: 0;
+      }
+      span.active::after {
+        display: block;
+      }
+    }
+    .line {
+      height: 1px;
+      background: rgba(186, 12, 0, 1);
+      margin-top: 30px;
+      margin-bottom: 24px;
+    }
+    .tab-content {
+      display: none;
+      .img-container {
+        width: 286px;
+        height: 424px;
+        margin-left: 18px;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 16px;
+        position: relative;
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .img-container:nth-of-type(4n + 1) {
+        margin-left: 0;
+      }
+      .part {
+        width: 31.9%;
+        height: 424px;
+        display: inline-block;
+        margin-left: 2%;
+        margin-bottom: 16px;
+        position: relative;
+        .img {
+          position: relative;
+          overflow: hidden;
+          height: 100%;
+          img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .info {
+          width: 100%;
+          height: 40px;
+          background: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          .title {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+      }
+      .part:nth-of-type(3n + 1) {
+        margin-left: 0;
+      }
+    }
+    .tab-content.active {
+      display: block;
+    }
+  }
+}
+.teacher-demeanor {
+  height: 386px;
+  background: rgba(247, 247, 247, 1);
+  font-size: 0;
+  .headline {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  .info {
+    a {
+      display: inline-block;
+      vertical-align: top;
+      width: 387px;
+      height: 237px;
+      border: 1px solid rgba(224, 224, 224, 1);
+      padding: 24px 20px 29px 20px;
+      margin-left: 19px;
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(51, 51, 51, 1);
+        line-height: 25px;
+      }
+      .subTitle {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(155, 71, 74, 1);
+        line-height: 17px;
+        margin-top: 2px;
+        margin-bottom: 8px;
+      }
+      .abstract {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        line-height: 22px;
+      }
+    }
+    a:first-child {
+      margin-left: 0;
+    }
+  }
+}

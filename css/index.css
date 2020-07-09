@@ -1,0 +1,300 @@
+.more {
+  width: 130px;
+  height: 42px;
+  border: 1px solid #ba0c00;
+  padding: 12px 30px;
+  text-align: center;
+  display: block;
+  margin: 38px auto 50px auto;
+}
+
+.more span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ba0c00;
+  line-height: 18px;
+  margin-right: 5px;
+}
+
+.dream-palace {
+  height: 706px;
+  background: url(../images/dream-palace-bg.png) no-repeat center;
+  background-size: cover;
+  font-size: 0;
+}
+
+.dream-palace .headline {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 24px;
+}
+
+.dream-palace .tab .tab-title {
+  text-align: center;
+}
+
+.dream-palace .tab .tab-title span {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 81px;
+  cursor: pointer;
+}
+
+.dream-palace .tab .tab-title span img {
+  opacity: 0.7;
+}
+
+.dream-palace .tab .tab-title span .word {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 25px;
+  margin-top: 11px;
+}
+
+.dream-palace .tab .tab-title span:first-child {
+  margin-left: 0;
+}
+
+.dream-palace .tab .tab-title span.active img {
+  opacity: 1;
+}
+
+.dream-palace .tab .tab-content {
+  text-align: center;
+  margin-top: 24px;
+  display: none;
+}
+
+.dream-palace .tab .tab-content .info {
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  height: 340px;
+  background: white;
+  border-radius: 6px;
+  margin-left: 75px;
+}
+
+.dream-palace .tab .tab-content .info .img-container {
+  width: 270px;
+  height: 152px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dream-palace .tab .tab-content .info .img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.dream-palace .tab .tab-content .info .title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.dream-palace .tab .tab-content .info .abstract {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding: 0 14px;
+  text-align: left;
+}
+
+.dream-palace .tab .tab-content .info:first-child {
+  margin-left: 0;
+}
+
+.dream-palace .tab .tab-content.active {
+  display: block;
+}
+
+.good-honours {
+  font-size: 0;
+}
+
+.good-honours .headline {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.good-honours .tab .tab-title {
+  text-align: center;
+}
+
+.good-honours .tab .tab-title span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ba0c00;
+  line-height: 26px;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.good-honours .tab .tab-title span::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  background: url(../images/arrow-top.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: none;
+}
+
+.good-honours .tab .tab-title span:first-child {
+  margin-left: 0;
+}
+
+.good-honours .tab .tab-title span.active::after {
+  display: block;
+}
+
+.good-honours .tab .line {
+  height: 1px;
+  background: #ba0c00;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.good-honours .tab .tab-content {
+  display: none;
+}
+
+.good-honours .tab .tab-content .img-container {
+  width: 286px;
+  height: 424px;
+  margin-left: 18px;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.good-honours .tab .tab-content .img-container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.good-honours .tab .tab-content .img-container:nth-of-type(4n + 1) {
+  margin-left: 0;
+}
+
+.good-honours .tab .tab-content .part {
+  width: 31.9%;
+  height: 424px;
+  display: inline-block;
+  margin-left: 2%;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.good-honours .tab .tab-content .part .img {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.good-honours .tab .tab-content .part .img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.good-honours .tab .tab-content .part .info {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.good-honours .tab .tab-content .part .info .title {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+
+.good-honours .tab .tab-content .part:nth-of-type(3n + 1) {
+  margin-left: 0;
+}
+
+.good-honours .tab .tab-content.active {
+  display: block;
+}
+
+.teacher-demeanor {
+  height: 386px;
+  background: #f7f7f7;
+  font-size: 0;
+}
+
+.teacher-demeanor .headline {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.teacher-demeanor .info a {
+  display: inline-block;
+  vertical-align: top;
+  width: 387px;
+  height: 237px;
+  border: 1px solid #e0e0e0;
+  padding: 24px 20px 29px 20px;
+  margin-left: 19px;
+}
+
+.teacher-demeanor .info a .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 25px;
+}
+
+.teacher-demeanor .info a .subTitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9b474a;
+  line-height: 17px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.teacher-demeanor .info a .abstract {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 22px;
+}
+
+.teacher-demeanor .info a:first-child {
+  margin-left: 0;
+}
+/*# sourceMappingURL=index.css.map */

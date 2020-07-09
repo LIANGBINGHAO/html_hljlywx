@@ -190,12 +190,9 @@ html {
   height: 100%;
 }
 
-body {
-  min-width: 1208px;
-}
-
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
   position: relative;
 }
@@ -329,6 +326,110 @@ body {
 
 .header .nav ul li:hover {
   background: #169458;
+}
+
+.footer {
+  height: 209px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#69caa0), to(#24a968));
+  background: linear-gradient(180deg, #69caa0 0%, #24a968 100%);
+}
+
+.footer .info {
+  font-size: 0;
+  padding: 53px 0;
+  position: relative;
+}
+
+.footer .info .logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 63px;
+}
+
+.footer .info .middle {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 51px;
+  padding-right: 87px;
+  position: relative;
+}
+
+.footer .info .middle::before {
+  content: "";
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.footer .info .middle::after {
+  content: "";
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.footer .info .right {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 44px;
+}
+
+.footer .info .right .word span:first-child {
+  margin-right: 71px;
+}
+
+.footer .info .code {
+  position: absolute;
+  top: 53px;
+  right: 0;
+}
+
+.footer .info .code .title {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  line-height: 16px;
+  margin-top: 14px;
+}
+
+.footer .info .word {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.footer .info .word:last-child {
+  margin-bottom: 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 8px;
+}
+
+.footer .copyright span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fafafa;
+  line-height: 16px;
+}
+
+.footer .copyright a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fafafa;
+  line-height: 16px;
+  padding-left: 31px;
 }
 
 /*二倍图使用*/
