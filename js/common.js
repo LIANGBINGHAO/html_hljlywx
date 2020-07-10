@@ -1,6 +1,7 @@
 var App = {
   init: function () {
     this.bind();
+    this.showSubmenu();
     this.scrollToTop();
     this.scrollAnimation();
   },
@@ -45,6 +46,19 @@ var App = {
     var myDate = new Date();
     var year = myDate.getFullYear();
     $("#year").text(year);
+  },
+  showSubmenu: function () {
+    $(".header .nav .container > ul > li").hover(
+      function () {
+        console.log(66);
+        var _this = $(this);
+        _this.find("ul").stop(true, false).slideDown();
+      },
+      function () {
+        var _this = $(this);
+        _this.find("ul").stop(true, false).slideUp();
+      }
+    );
   },
   changeFontSize: function () {
     var window_width = $(window).width();
